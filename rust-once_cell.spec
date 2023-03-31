@@ -5,7 +5,7 @@
 
 Name:           rust-%{crate}
 Version:        1.7.2
-Release:        2
+Release:        3
 Summary:        Single assignment cells and lazy values
 
 # Upstream license specification: MIT OR Apache-2.0
