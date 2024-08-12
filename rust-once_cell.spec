@@ -1,18 +1,17 @@
-%bcond_without check
+%bcond_with check
 %global debug_package %{nil}
 
 %global crate once_cell
 
 Name:           rust-%{crate}
-Version:        1.7.2
-Release:        3
+Version:        1.19.0
+Release:        1
 Summary:        Single assignment cells and lazy values
 
 # Upstream license specification: MIT OR Apache-2.0
 License:        MIT OR Apache-2.0
 URL:            https://crates.io/crates/once_cell
 Source:         %{crates_source}
-Patch0:		once_cell-1.7.2-allow-newer-crossbeam-utils.patch
 
 ExclusiveArch:  %{rust_arches}
 %if %{__cargo_skip_build}
